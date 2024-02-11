@@ -1,24 +1,25 @@
-const button=document.querySelector("#button");
-button.addEventListener("click",(e)=>
-{
-    const na=document.querySelector("#name");
-    const cont=document.querySelector("#content");
-    const n=na.value;
-    const c=cont.value;
-    const str=n.concat(" : ",c);
-    const list=document.querySelector("#List");
-    const Item = document.createElement("li");
-    Item.textContent = str;
-    const del=document.createElement("button");
-    del.innerHTML = '<i class="fa fa-trash-alt"></i>';
-    del.addEventListener("click",(e)=>{
-        list.removeChild(Item);
+const button = document.querySelector("#button");
+const na = document.querySelector("#name");
+const cont = document.querySelector("#content");
+const list = document.querySelector("#List");
 
-    })
-    Item.appendChild(del);
-    list.appendChild(Item);
+const createListItem = () => {
+    const item = document.createElement("li");
+    item.className = "list-group-item d-flex justify-content-between align-items-center";
+    item.textContent = `${na.value} : ${cont.value}`;
     
+    const del = document.createElement("i");
+    del.className = "fa-solid fa-trash-can ms-auto";
+    item.appendChild(del);
+    
+    del.addEventListener("click", () => {
+        list.removeChild(item);
+    });
+    
+    return item;
+};
 
-}
-
-)
+button.addEventListener("click", () => {
+    const listItem = createListItem();
+    list.appendChild(listItem);
+});
