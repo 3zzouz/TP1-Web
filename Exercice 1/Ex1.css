@@ -1,0 +1,42 @@
+
+
+#easy{
+    color: green;
+    font-family: cursive;
+    font-size: larger;
+    
+
+}
+
+#mod
+{
+    color:orange;
+    font-family: cursive;
+    font-size: larger;
+   
+}
+
+#hard{
+    color:red;
+    font-family: cursive;
+    font-size: larger;
+    
+
+}
+
+h1{
+    font-family: cursive;
+    color: blueviolet;
+    text-align: center;
+}
+
+h2
+{
+    font-family: cursive;
+    text-decoration: underline;
+}
+
+body
+{
+    background-color: aqua;
+}

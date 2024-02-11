@@ -1,0 +1,33 @@
+#container
+{
+ margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+#List
+{
+    position: absolute;
+    top:10px;
+
+}
+
+.text
+{
+
+border-radius: 5px;
+
+}
+
+#button
+{
+    background-color: navy;
+    color: white;
+    border-radius: 5px;
+}
+
+body
+{
+    background-color: lightgray;
+}
+
