@@ -1,11 +1,13 @@
-
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
 #easy{
     color: green;
     font-family: cursive;
     font-size: larger;
-    
-
 }
 
 #mod
@@ -13,30 +15,17 @@
     color:orange;
     font-family: cursive;
     font-size: larger;
-   
 }
 
 #hard{
     color:red;
     font-family: cursive;
     font-size: larger;
-    
-
 }
 
-h1{
-    font-family: cursive;
-    color: blueviolet;
-    text-align: center;
-}
 
-h2
+ul > li 
 {
-    font-family: cursive;
-    text-decoration: underline;
-}
-
-body
-{
-    background-color: aqua;
+    cursor: pointer;
+    width:min-content;
 }
