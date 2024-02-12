@@ -23,6 +23,9 @@ const createListItem = () => {
 button.addEventListener("click", () => {
   const listItem = createListItem();
   list.appendChild(listItem);
+  na.value = "";
+  cont.value = "";
+  button.disabled = true;
 });
 
 const toggleDisabled = (el, param1, param2) => {
