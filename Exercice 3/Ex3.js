@@ -29,7 +29,7 @@ button.addEventListener("click", () => {
 });
 
 const toggleDisabled = (el, param1, param2) => {
-  el.disabled = !param1.value.length || !param2.value.length;
+  el.disabled = !param1.value.trim().length || !param2.value.trim().length;
 };
 
 document.getElementById("input").addEventListener("keyup", (e) => {
