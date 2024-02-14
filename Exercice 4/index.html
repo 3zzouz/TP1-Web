@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./spinning-wheel_6645363.png" type="image/x-icon" />
     <title>Random Color</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -10,16 +11,17 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <style>
-      * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-      }
-      ol {
-        cursor: pointer;
-      }
-    </style>
+    <meta
+      name="keywords"
+      content="Random,Color,HTML, CSS, JavaScript, Bootstrap, Web, Programming, Development,GL2,INSAT,TP1,EX4"
+    />
+    <meta
+      name="description"
+      content="Random Color is a simple web page that contains three list items that when clicked changes their color."
+      <link
+      rel="stylesheet"
+      href="index.css"
+    />
   </head>
   <body class="container mx-auto py-5">
     <ol>
@@ -41,14 +43,7 @@
         saepe quod magni animi a iste. Rerum, quibusdam!
       </li>
     </ol>
-    <script>
-      const generateRandomColor = () => {
-        return Math.floor(Math.random() * 256);
-      };
-      document.getElementsByTagName("ol")[0].addEventListener("click", (e) => {
-        e.target.style.color = `rgb(${generateRandomColor()}, ${generateRandomColor()}, ${generateRandomColor()})`;
-      });
-    </script>
+    <script src="index.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

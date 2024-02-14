@@ -1,9 +1,9 @@
+let min, max, tries;
 const setParams = (mn, mx, tr) => {
   min = mn;
   max = mx;
   tries = tr;
 };
-let min, max, tries;
 function game(difficulty) {
   switch (difficulty) {
     case "easy":

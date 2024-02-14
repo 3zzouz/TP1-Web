@@ -14,6 +14,7 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link rel="icon" href="to-do-list.png" type="image/x-icon" />
     <link rel="stylesheet" href="Ex3.css" />
     <link
       rel="stylesheet"
@@ -21,16 +22,40 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <meta
+      name="keywords"
+      content="ToDo,HTML, CSS, JavaScript, Bootstrap, Web, Programming, Development,GL2,INSAT,TP1,EX3"
+    />
+    <meta
+      name="description"
+      content="ToDo is a simple web page that contains a list of ToDos and a form to add new ones and the ability to delete old ones."
+    />
   </head>
   <body class="container row mx-auto py-5 gap-2">
     <div class="col-4">
       <ul id="List" class="list-group"></ul>
     </div>
     <div class="col-6 ms-auto" id="input">
-      <label for="name" class="form-label">Name</label>
-      <input type="text" name="name" id="name" class="form-control" />
-      <label for="content" class="form-label mt-3">Content</label>
-      <input type="text" name="content" id="content" class="form-control" />
+      <div class="form-floating">
+        <input
+          type="text"
+          placeholder="Name"
+          name="name"
+          id="name"
+          class="form-control"
+        />
+        <label for="name" class="form-label">Name</label>
+      </div>
+      <div class="form-floating mt-3">
+        <input
+          type="text"
+          placeholder="Content"
+          name="content"
+          id="content"
+          class="form-control"
+        />
+        <label for="content" class="form-label">Content</label>
+      </div>
       <input
         type="button"
         value="Add ToDo"

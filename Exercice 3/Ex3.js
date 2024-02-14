@@ -33,7 +33,6 @@ const toggleDisabled = (el, param1, param2) => {
 };
 
 document.getElementById("input").addEventListener("keyup", (e) => {
-  console.log(e.target.name, e.target.value);
   if (["name", "content"].includes(e.target.name)) {
     toggleDisabled(button, na, cont);
   }
