@@ -1,0 +1,60 @@
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  h1{
+    color:rgb(53, 53, 53) ;
+  }
+
+  .todo-container {
+    width: 300px;
+    text-align: center;
+  }
+  
+  .task-input {
+    width: 100%; /* Ajuster la largeur à 100% pour remplir complètement le conteneur */
+    height: 50px; 
+    padding: 8px;
+    margin: 10px 0;
+    box-sizing: border-box; /* Inclure le padding dans la largeur et la hauteur */
+    
+  }
+  
+  button {
+    width: 100%; /* Ajuster la largeur à 100% pour remplir complètement le conteneur */
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin: 5px 0;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+    display: flex; /* Utiliser Flexbox pour aligner les éléments */
+    align-items: center; /* Aligner les éléments sur l'axe vertical */
+  }
+  
+  li:last-child {
+    border-bottom: none;
+  }
+  
+  .fa-trash-alt {
+    margin-left: auto; /* Déplacer l'icône à l'extrême droite de la ligne */
+    cursor: pointer;
+  }
+  
