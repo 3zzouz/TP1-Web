@@ -6,6 +6,10 @@ const setParams = (mn, mx, tr) => {
   tries = tr;
 };
 // Function to handle the guessing game
+/**
+ * Plays a number guessing game based on the specified difficulty level.
+ * @param {string} difficulty - The difficulty level of the game (easy, moderate, hard).
+ */
 function game(difficulty) {
   // Set game parameters based on difficulty level
   switch (difficulty) {
